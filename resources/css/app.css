@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+    color: #141619;
+}
+
+li a {
+    background: linear-gradient(#ffd85f, #ffd85f) 0 60%/0 10px no-repeat;
+    transition: background .3s;
+}
+
+li a:hover {
+    background-size: 100% 10px;
+}
+
+.gray_wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.NavSidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    max-width: 384px;
+    background-color: white;
+    z-index: 50;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.NavSidebar.active {
+    transform: translateX(0);
+}
+
+.about_this_site {
+    background-color: white;
+}
+
+.about_this_site p {
+    max-width: 550px;
+}
+
+
+.box {
+    height: 4000px;
+    background-color: #fafafa;
+}
