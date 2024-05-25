@@ -7,6 +7,15 @@ body {
     color: #141619;
 }
 
+header {
+    z-index: 5;
+}
+
+.site_logo {
+    background: linear-gradient(#ffd85f, #ffd85f) 0 60%/0 10px no-repeat;
+    background-size: 100% 10px;
+}
+
 li a {
     background: linear-gradient(#ffd85f, #ffd85f) 0 60%/0 10px no-repeat;
     transition: background .3s;
@@ -44,16 +53,102 @@ li a:hover {
     transform: translateX(0);
 }
 
+.top_section {
+    background-color: #fafafa;
+}
+
 .about_this_site {
     background-color: white;
 }
 
-.about_this_site p {
+p {
     max-width: 550px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.about_me, .skills {
+    background-color: #fafafa;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.works_item div:first-child {
+    border: 3px solid #141619;
+    transition: all 0.2s ease-out;
+}
+
+.works_item div:first-child:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.works_item p {
+    background: linear-gradient(#ffd85f, #ffd85f) 0 80%/0 10px no-repeat;
+    transition: background .2s;
+}
+
+.works_item div:first-child:hover + div p {
+    background-size: 100% 10px;
+}
+
+.work_modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    height: 90%;
+    background-color: #fafafa;
+    z-index: 30;
+    padding: 20px;
+}
+
+.close_icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 40;
+}
+
+.link_logo {
+    background: linear-gradient(#ffd85f, #ffd85f) 0 80%/0 10px no-repeat;
+    transition: background .2s;
+}
+
+.link_logo:hover {
+    background-size: 100% 10px;
+}
+
+.contact_form {
+    max-width: 550px;
+}
+
+label {
+    margin-left: 10px;
+}
+
+button {
+    border: 1px solid #141619;
+    padding: 3px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+footer {
+    background-color: #141619;
 }
 
 
 .box {
-    height: 4000px;
+    height: 2000px;
     background-color: #fafafa;
+    box-shadow: #141619;
 }
