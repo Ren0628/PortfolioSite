@@ -1,6 +1,6 @@
 function AboutThisSiteSection() {
     return (
-        <div id="AboutThisSite" className="about_this_site py-64 px-12 md:px-24 container mx-auto">
+        <div id="AboutThisSite" className="about_this_site py-40 md:py-64 px-12 md:px-24">
             <h2 className="text-4xl md:text-5xl text-center font-bold mb-10">
                 About this site
             </h2>
