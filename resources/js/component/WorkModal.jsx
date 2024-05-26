@@ -49,7 +49,7 @@ function WorkModal({
                 </div>
                 <div className="w-full md:w-1/2">
                     <div className="md:px-4 leading-8 mt-8 flex justify-center">
-                        <p>{appComment}</p>
+                        <p className="font-light">{appComment}</p>
                     </div>
                 </div>
             </div>
