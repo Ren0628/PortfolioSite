@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     color: #141619;
@@ -12,13 +16,12 @@ header {
 }
 
 .site_logo {
-    background: linear-gradient(#ffd85f, #ffd85f) 0 60%/0 10px no-repeat;
-    background-size: 100% 10px;
+    background: linear-gradient(#ffd85f, #ffd85f) 0 60%/100% 10px no-repeat;
 }
 
 li a {
     background: linear-gradient(#ffd85f, #ffd85f) 0 60%/0 10px no-repeat;
-    transition: background .3s;
+    transition: background 0.3s;
 }
 
 li a:hover {
@@ -57,6 +60,121 @@ li a:hover {
     background-color: #fafafa;
 }
 
+.top_logo {
+    font-size: 200px;
+    position: relative;
+}
+
+@keyframes baunce {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    5% {
+        
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    75% {
+        transform: translateY(12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes fadeinline {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 365px;
+    }
+}
+
+@keyframes fadeintext {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.top_logo_D,
+.top_logo_e,
+.top_logo_v,
+.top_logo_dot {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.top_logo_D {
+    padding-left: 20px;
+    animation: baunce 0.5s ease-in-out 0s 1 normal both;
+}
+
+.top_logo_e {
+    animation: baunce 0.5s ease-in-out 0.5s 1 normal both;
+}
+
+.top_logo_v {
+    animation: baunce 0.5s ease-in-out 1s 1 normal both;
+}
+
+.top_logo_dot {
+    animation: fadein 0.3s ease-in 1.5s 1 normal both;
+}
+
+.top_logo .top_logo_bg {
+    position: absolute;
+    top: 175px;
+    left: 25px;
+    height: 55px;
+    width: 365px;
+    background-color: #ffd85f;
+    border-radius: 10px;
+    z-index: 1;
+    animation: fadeinline 0.3s ease-in-out 1.5s 1 normal both;
+}
+
+.top_text {
+    animation: fadeintext 1s ease-in-out 2s 1 normal both;
+}
+
 .about_this_site {
     background-color: white;
 }
@@ -66,7 +184,8 @@ p {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.about_me, .skills {
+.about_me,
+.skills {
     background-color: #fafafa;
 }
 
@@ -87,7 +206,7 @@ img {
 
 .works_item p {
     background: linear-gradient(#ffd85f, #ffd85f) 0 80%/0 10px no-repeat;
-    transition: background .2s;
+    transition: background 0.2s;
 }
 
 .works_item div:first-child:hover + div p {
@@ -115,7 +234,7 @@ img {
 
 .link_logo {
     background: linear-gradient(#ffd85f, #ffd85f) 0 80%/0 10px no-repeat;
-    transition: background .2s;
+    transition: background 0.2s;
 }
 
 .link_logo:hover {
@@ -145,7 +264,6 @@ button:active {
 footer {
     background-color: #141619;
 }
-
 
 .box {
     height: 2000px;
