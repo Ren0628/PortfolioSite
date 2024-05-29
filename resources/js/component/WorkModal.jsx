@@ -19,7 +19,7 @@ function WorkModal({
             <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2">
                     <p className="font-bold text-center mb-2">{appName}</p>
-                    <a href={appLink} className="flex flex-wrap cursor-pointer border-black border-2 mb-4">
+                    <a href={appLink} className="flex flex-wrap cursor-pointer border-black border-2 mb-4" target="_blank" rel="noopener noreferrer">
                         <img src={`${imageUrl}/${imageName}1.png`} alt="" />
                         <img src={`${imageUrl}/${imageName}2.png`} alt="" />
                         <img src={`${imageUrl}/${imageName}3.png`} alt="" />
@@ -35,12 +35,12 @@ function WorkModal({
                     </div>
                     <div className="mt-8">
                         <div className="flex justify-center">
-                            <a className="link_logo text-3xl" href={gitHubUrl}>
+                            <a className="link_logo text-3xl" href={gitHubUrl} target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-github"></i>GitHub
                             </a>
                         </div>
                         <div className="flex justify-center mt-4">
-                            <a className="link_logo text-3xl" href={appLink}>
+                            <a className="link_logo text-3xl" href={appLink} target="_blank" rel="noopener noreferrer">
                                 App{" "}
                                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
