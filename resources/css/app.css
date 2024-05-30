@@ -266,6 +266,7 @@ footer {
 }
 
 .scroll_fade_in {
+    height: 100%;
     opacity: 0;
     transform: translateY(50px);
     transition: all .5s ease-in-out;
