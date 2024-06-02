@@ -16,8 +16,6 @@ export default function Welcome(props) {
     const [formSuccess, setFormSuccess] = useState(false);
     const { success } = props;
 
-    console.log(props);
-
     useEffect(() => {
         if(success) {
             setFormSuccess(true);
