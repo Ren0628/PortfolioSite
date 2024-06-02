@@ -1,7 +1,7 @@
 import { useForm } from "@inertiajs/react";
 
 function ContactForm() {
-    const { data, setData, post } = useForm({
+    const { data, setData, post, reset } = useForm({
         name: "",
         email: "",
         comment: "",
@@ -11,6 +11,8 @@ function ContactForm() {
         e.preventDefault()
         
         post(route('contact.store'));
+
+        reset();
     }
 
     return (
