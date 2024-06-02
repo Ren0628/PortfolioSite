@@ -12,7 +12,7 @@ function AboutMeSection() {
                     簡単に自己紹介をさせていただきます。
                 </p>
             </ScrollFadeIn>
-            <div className="flex flex-col md:flex-row md:flex-wrap mt-12">
+            <div className="flex flex-col md:flex-row md:flex-wrap mt-12 max-w-screen-xl mx-auto">
                 <div className=" md:w-1/2">
                     <ScrollFadeIn>
                         <div className="border-black border-t-2 md:border-t-0 md:border-r-2 border-b-2 md:border-b-0 h-full">
@@ -43,7 +43,7 @@ function AboutMeSection() {
                             <AboutMeItem
                                 heading={"Hobby"}
                                 content={
-                                    "プログラミング以外では、PCオンラインゲームや、7歳から続けているゴルフが趣味です。"
+                                    "プログラミング以外では、PCオンラインゲームや、8歳から続けているゴルフが趣味です。"
                                 }
                             />
                         </div>
