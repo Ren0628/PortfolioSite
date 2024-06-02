@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ContactFormController;
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return Inertia::render('Home', [
         'imageUrl' => asset('img'),
     ]);
