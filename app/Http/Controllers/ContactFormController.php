@@ -18,6 +18,6 @@ class ContactFormController extends Controller
 
         Mail::to('ren6nt@gmail.com')->send(new ContactFormMail($data));
         
-        return redirect()->back()->with('success', true);
+        return redirect('/', 302, [], true)->with('success', true);
     }
 }
