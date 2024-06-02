@@ -12,7 +12,7 @@ export default function Header() {
                         <a className="flex h-full items-center py-4" href="#AboutMe">About me</a>
                         <ul className="w-28 absolute inset-x-1/2 bg-white bg-opacity-80 rounded-b-md invisible group-hover:visible opacity-0 group-hover:opacity-100 -translate-y-2 -translate-x-1/2 group-hover:translate-y-0 ease-in-out duration-500">
                             <li><a className="flex h-full items-center justify-center py-2 mx-8" href="#Works">Works</a></li>
-                            <li><a className="flex h-full items-center justify-center py-2 mx-9" href="#Skills">Slills</a></li>
+                            <li><a className="flex h-full items-center justify-center py-2 mx-9" href="#Skills">Skills</a></li>
                         </ul>
                     </li>
                     <li><a className="flex h-full items-center py-4" href="#Contact">Contact</a></li>

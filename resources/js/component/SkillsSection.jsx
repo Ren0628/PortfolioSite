@@ -6,7 +6,7 @@ function SkillsSection() {
         <div id="Skills" className="skills py-32 md:py-36 md:px-12">
             <ScrollFadeIn>
                 <h2 className="text-4xl md:text-5xl text-center font-bold mb-10">
-                    Slills
+                    Skills
                 </h2>
                 <p className="mx-auto text-center leading-8">
                     これまでに習得した技術を紹介します。

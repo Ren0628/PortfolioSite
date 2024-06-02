@@ -9,7 +9,7 @@ function NavSidebar({ handleClose, NavSidebarOpen }) {
             <li><a className="inline-block mb-3" href="#AboutThisSite">About this site</a></li>
             <li><a className="inline-block mb-3" href="#AboutMe">About me</a></li>
             <li><a className="inline-block mb-3" href="#Works">Works</a></li>
-            <li><a className="inline-block mb-3" href="#Skills">Slills</a></li>
+            <li><a className="inline-block mb-3" href="#Skills">Skills</a></li>
             <li><a className="inline-block mb-3" href="#Contact">Contact</a></li>
         </ul>
     </div>
